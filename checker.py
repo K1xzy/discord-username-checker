@@ -7,7 +7,7 @@ BASE_URL = "https://discord.com/api/v9/users/@me"
 REQUEST_HEADERS = {
     "Content-Type": "application/json",
     "Origin": "https://discord.com",
-    "Authorization": "NzkyODMxNTI2MjY5MzU0MDQ0.GTJAY0.q9IuNPYbuGK1IFlW-_MHD1IYV6m_EpLtsjgm6M",
+    "Authorization": "your discord token",
 }
 
 # Configure colorlog and logging
@@ -23,7 +23,7 @@ with open("usernames.txt", "r") as file:
 # Iterate through each username
 for username in usernames:
     # Payload data
-    payload = {"username": username, "password": "cartita123"}
+    payload = {"username": username, "password": "your discord account password"}
 
     while True:
         # Send PATCH request
